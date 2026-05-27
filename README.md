@@ -30,22 +30,37 @@ The application demonstrates basic Spring Boot setup, controller handling, and u
 - `src/main/resources/static/images/vistula.png`
 
 
+## How it works
+The application defines a controller class:
 
+HelloController
 
+It provides two endpoints
 
+1 Root Endpoint (/) . URL:http://loclhost:8080/
+
+. Return a plain text response
+
+2 Greeting Endpoint ( /greeting)
+
+. URL:http://localhost:8080/greeting?name = Vistula
+
+. Accepts a query parameter: name
+
+. Passes the value to a view (HTML template)
 
 ## How to Run
 
 1. Open the project in IntelliJ IDEA
 2. Run the main class: `FirstProjectJavaSpringApplication`
-3. Open the browser and paste these URL
+3. Open the browser and paste this URL
    - `http://localhost:8080`- Response in Plain text
    - `http://localhost:8080/greeting`- greeting on a Thymeleaf page
    - `http://localhost:8080/greeting?name=Vistula`- Personalized greeting with Thymeleaf Page
 
 
 
-## Project Structure Highlights
+## Project Structure
 - `src/main/java/.../controller/HelloController.java`
 - `src/main/resources/templates/greeting.html`
 - `src/main/resources/static/images/vistula.png`
